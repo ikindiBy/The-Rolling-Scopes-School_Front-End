@@ -1,0 +1,15 @@
+@font-face {
+  font-family: "Bebas";
+  src:  url("../fonts/bebas/bebas.ttf") format("ttf"),
+        url("../fonts/bebas/bebas.woff") format("woff"),
+        url("../fonts/bebas/bebas.woff2") format("woff2");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "StMarie";
+  src: url("../fonts/st-marie/StMarie-Thin.otf");
+  font-style: normal;
+  font-weight: normal;
+}

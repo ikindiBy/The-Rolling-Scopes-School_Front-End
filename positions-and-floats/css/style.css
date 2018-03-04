@@ -1,0 +1,508 @@
+
+/* I deleted .header-keeper  */
+
+* {
+	margin: 0;
+}
+
+body {
+  margin: 0 auto;
+  width: 100%;
+  /* height: 1924px; */
+  max-width: 1600px;
+  background-color: #fff;
+  font-size: 10px;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* header      */
+
+.head_wrapper{
+  width: 100%;
+  max-width: 1600px;
+  background-color: #fff;
+  height: 128px;
+  position: fixed;
+  z-index: 10;
+}
+
+header {
+  margin: 0 auto;
+  max-width: 1200px;
+  height: 100%;
+  position: relative;
+}
+
+header img {
+  margin: 5px 0 0 18px;
+}
+
+.logo-text {
+  position: absolute;
+  top: 0;
+  margin: 10px 0 0 49px;
+}
+
+.logo-text span {
+  font-family: "Bebas";
+  font-size: 2.4rem;
+  display: block;
+  text-align: center;
+}
+
+.logo-text span:first-child {
+  font-family: "Calibri";
+}
+
+.logo-text span:first-child {
+  color: rgb(252,186,80);
+}
+
+.logo-text span:nth-child(2) {
+  text-transform: uppercase;
+  color: rgb(110,109,107);
+}
+
+nav  {
+  position: absolute;
+  right: 0;
+  top: 20px;
+  vertical-align: middle ;
+}
+
+nav span {
+  font-family: "Calibri";
+  color: rgb(158,155,155);
+  font-size: 1.4rem ;
+}
+
+nav div {
+  margin: 0 auto 9px auto;
+}
+
+nav li:first-child, nav li:nth-child(2)  {
+  margin-right:  70px;
+}
+
+nav li:nth-child(3)  {
+  margin-right:  80px;
+}
+
+nav li:nth-child(4)  {
+  margin-right:  82px;
+}
+
+.bg-about {
+  width: 23px;
+  height: 44px;
+  background: url('../images/css_sprites.png') -10px -131px;
+}
+
+li:hover .bg-about {
+  background: url('../images/css_sprites_hover.png') -10px -131px;
+}
+
+.bg-blog {
+  width: 40px; 
+  height: 40px;
+  background: url('../images/css_sprites.png') -148px -10px;
+}
+
+li:hover .bg-blog {
+  background: url('../images/css_sprites_hover.png') -148px -10px;
+}
+
+.bg-contact {
+  width: 50px; 
+  height: 34px;
+  background: url('../images/css_sprites.png') -10px -77px;
+}
+
+li:hover .bg-contact {
+  background: url('../images/css_sprites_hover.png') -10px -77px;
+}
+
+.bg-home {
+  width: 55px; 
+  height: 47px;
+  background: url('../images/css_sprites.png') -10px -10px;
+}
+
+li:hover  .bg-home {
+  background: url('../images/css_sprites_hover.png') -10px -10px;
+}
+
+.bg-work {
+  width: 43px; 
+  height: 43px;
+  background: url('../images/css_sprites.png') -85px -10px;
+}
+
+li:hover .bg-work {
+  background: url('../images/css_sprites_hover.png') -85px -10px;
+}
+
+li:hover span {
+  color: rgb(0,0,0);
+}
+
+nav, nav li, .logo-text {
+  display: inline-block;
+}
+
+nav li {
+  text-align: center;
+}
+
+/*   main  main  main  main  main  main  main  main  main  main  */ 
+
+main {
+  padding-top: 128px;
+  min-height: calc(100vh - 128px - 70px - 125px - 15px);
+}
+
+
+.four-texstareas, .meet-the-team, .send-message{
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+/*   slider     */
+
+.slider{
+  width: 100%;
+  height: 400px;
+  background-image: url("../images/slider.jpg");
+  border-bottom: solid 4px rgb(252,186,80);
+  border-top: solid 4px rgb(252,186,80);
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.slider button {
+  font-family: "Bebas";
+  text-transform: uppercase;
+  font-size: 2.4rem;
+  padding: 0;
+  border: none;
+  position: absolute;
+  cursor: pointer;
+}
+
+.slider button:first-child {
+  width: 382px;
+  height: 66px;
+  color: rgb(251,156,6);
+  background-color: rgba(0,0,0,.69);
+  top: 130px;
+  left: 220px;
+  line-height: 66px;
+  text-align: center;
+  padding-left: 11px;
+}
+
+.slider button:first-child:hover {
+  background-color: rgba(0,0,0,.9);
+}
+
+.slider button:nth-child(2) {
+  width: 396px;
+  height: 77px;
+  color: rgb(110,109,107);
+  background-color: rgba(255,175,18,.7);
+  top: 223px;
+  left: 211px;
+  padding: 0 0 6px 10px;
+}
+
+.slider button:nth-child(2):hover {
+  background-color: rgba(255,175,18,.95);
+}
+
+/* 4 texts   */ 
+
+.four-texstareas {
+  font-size: 0;
+  margin-bottom: 30px;
+}
+
+.four-texstareas article {
+  box-sizing: border-box;
+  padding: 0 19px;
+  display: inline-block;
+  width: calc(100%/4);
+  font-family: "Calibri";
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.44;
+  letter-spacing: -0.4px;
+}
+
+.four-texstareas article p {
+  height: 138px;
+  overflow: hidden;
+}
+
+.four-texstareas article span {
+  font-style: italic;
+  display: block; 
+  text-align: right; 
+}
+
+.four-texstareas a {
+  color: rgb(251,156,6);
+}
+
+.four-texstareas a:hover {
+  color: rgb(0,0,0);
+}
+
+.gradietn-line {
+  height: 5px;
+  width: 100%;
+  background: linear-gradient(to top, #fff, rgb(242,242,242));  
+  margin-bottom: 10px;
+}
+
+/* avatars    */
+
+.meet-the-team  {
+  font-size: 0;
+  margin-bottom: 40px;
+}
+
+.meet-the-team h2, .send-message h2 {
+  font-family: "StMarie";
+  color: rgb(255,152,16);
+  font-size: 2.5rem;
+  text-align: center;
+  text-decoration: underline; 
+}
+
+.meet-the-team h2 {
+  margin-bottom: 36px;
+}
+
+.meet-the-team article {
+  font-family: Calibri, Sans-Serif;
+  display: inline-block;
+  width: 312px;
+  vertical-align: top;
+}
+
+.meet-the-team article:nth-child(3) {
+  margin: 0 132px;
+}
+
+.meet-the-team article:nth-child(3) img{
+  margin-left: 15px;
+}
+
+.meet-the-team article:nth-child(3) figcaption{
+  padding: 0 26px 0 55px;
+}
+
+article h4{
+  font-size: 1.4rem;
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 22px;
+}
+
+article h4 span {
+  color: rgb(251,156,6);
+}
+
+article h4 span:before {
+  content: ' - ';
+}
+
+.meet-the-team figure {
+  font-size: 1.4rem;
+  letter-spacing: .11rem;
+}
+
+figure {
+  text-align: center;
+}
+
+figure img {
+  border: 8px solid rgb(255,181,64);
+  border-radius: 50%;
+  width: 312px;
+  height: 312px;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+}
+
+figure figcaption {
+  height: 92px;
+  padding: 0 26px 0 40px;
+  text-align: left;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.44;
+  letter-spacing: -0.4px;
+  overflow: hidden;
+}
+
+/* message   */
+
+.send-message label, .send-message input, .send-message textarea {
+  font-family: "StMarie";
+  display: inline-block;
+}
+
+.send-message h2 {
+  margin-bottom: 66px;
+  padding-right: 16px;
+}
+
+.send-message form {
+  position: relative;
+}
+
+.send-message label {
+  color: rgb(255,152,16);
+  font-size: 1.4rem;
+  width: 120px;
+}
+
+.send-message input {
+  height: 33px; 
+}
+
+.send-message input, .send-message textarea {
+  background-color: rgb(248,247,246);
+  border-top: 1px solid rgb(210,208,207);
+  border-left: 4px solid rgb(210,208,207);
+  border-bottom: none;
+  border-right: none;
+  box-sizing: border-box;
+  box-shadow: inset 1px 1px rgb(237,237,236), -1px -1px rgb(222,221,220); 
+}
+
+.send-message input:focus {
+  height: 33px;
+}
+
+.send-message input:focus, .send-message textarea:focus {
+  background-color: rgba(251,156,6,.2); 
+  outline: none;
+  padding-left: 3px ;
+  border-top: none;
+  border-left: 4px solid rgb(251,156,6);
+  border-bottom: 1px solid rgb(251,156,6);
+  box-shadow: inset 1px 0 rgb(237,237,236), -1px 0 rgb(222,221,220);
+  box-sizing: border-box;
+}
+
+.send-message input {
+  font-family: "StMarie";
+  width: 1070px;
+  height: 34px;
+  margin-bottom: 37px;  
+}
+
+.send-message textarea {
+  width: 1070px;
+  height: 90px;
+  resize: none;
+  vertical-align: top;
+}
+
+.send-message button {
+  position: absolute;
+  float: right;
+  margin-right: 32px;
+  font-family: "StMarie";
+  font-size: 2rem;
+  color: #fff;
+  width: 176px;
+  height: 46px;
+  background: rgb(251,156,6);
+  padding: 0;
+  line-height: 46px;
+  border: none;
+  bottom: -70px;
+  right: 0;
+  box-shadow:inset 1px 0 rgb(253,209,139), inset 0 1px rgb(252,185,79), inset 0 -1px rgb(246,187,92);
+  -webkit-transition: bottom .1s;
+  -moz-transition: bottom .1s;
+  -o-transition: bottom .1s;
+  transition: bottom .1s;
+}
+
+.send-message button:hover {
+  box-shadow:inset 3px 3px 2px rgb(255,181,64), inset -3px -3px 2px rgb(255,181,64);
+  color: #000;
+}
+
+.send-message button:active {
+  bottom: -73px;
+}
+
+.send-message button:active:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: #fff;
+  width: 176px;
+  height: 46px;
+  border-bottom: solid 1px rgb(204,131,15) ;
+  box-shadow: inset 4px 4px 2px rgb(255,181,64), inset -5px -5px 2px rgb(255,181,64);
+}
+
+.send-message button:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 176px;
+  height: 46px;
+  border-bottom: solid 3px rgb(204,131,15);
+  -webkit-transition: border-bottom .1s;
+  -moz-transition: border-bottom .1s;
+  -o-transition: border-bottom .1s;
+  transition: border-bottom .1s;
+}
+
+.send-message button:active, .send-message button:focus {
+  border: none;
+   box-shadow: none;
+   outline: none;
+}
+
+/* footer   */
+
+footer {
+  height: 70px;
+  width: 100%;
+  max-width: 1600px;
+  background: rgb(251,156,6);
+  
+  /*
+  top: 1845px;
+  bottom: 0;
+  position: absolute;
+  */
+    margin-top: 125px;
+  margin-bottom: 15px;
+  box-shadow:  0 3px rgb(204,131,15);
+  line-height: 70px;
+}
+
+footer p {
+  font-family: "StMarie";
+  font-size: 2rem;
+  text-transform: uppercase;
+  text-align: center;
+  color: #fff;
+  letter-spacing: .11rem;
+}
+
+

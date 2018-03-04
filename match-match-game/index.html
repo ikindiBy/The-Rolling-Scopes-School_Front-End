@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>match-game</title>
+  <link rel="stylesheet" type="text/css" href="css/font-awesome.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <ul class="menu">
+        <li><a href="#">Skirts</a>
+          <ul class="submenu skirts">
+            <li><a href="#"><img src="images/skirt-0.jpg" alt="first skirt"></a></li>
+            <li><a href="#"><img src="images/skirt-1.jpg" alt="second skirt"></a></li>
+            <li><a href="#"><img src="images/skirt-2.jpg" alt="third skirt"></a></li>
+          </ul>
+        </li>
+        <li><a href="#"> difficulty</a>
+          <ul class="submenu difficulty">
+            <li><a href="#">Low (5 x 2)</a></li>
+            <li><a href="#">Medium (6 x 3)</a></li>
+            <li><a href="#">Hight (8 x 3)</a></li>
+          </ul>
+        </li>
+        <li>
+          <form id="formTimer">
+            <input name="watch" size=10 value="00:00.00">
+          </form>
+        </li>
+        <li><button id="new-game">New Game</button></li>
+        <li><button id="home" class="home"><i class="fa fa-home fa-2x" aria-hidden="true"></i></button></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+      <div class="playingArea"> 
+        <div class="rules">
+          <h2>How to play: </h2>
+          <p>It is a counter game where the object is to find pairs.<br>
+          Whene the game begins, all pictures are hidden.<br>
+          To Play: <br> 
+        </p>
+          <ol>
+            <li> Selected two cards to try to match the pictures.</li>
+            <li> If you match the pictures you can go again.</li>
+            <li> If they don't match it is the computer turn them.</li>
+            <li> You have 3 minutes for finding all matches.</li>
+            <li> The player that finds all pairs wins!</li>
+            <li> Have Fun!</li>
+          </ol>
+        </div>
+      </div>
+  </main>
+  <script src="match-game.js" async></script>
+</body>
+</html>

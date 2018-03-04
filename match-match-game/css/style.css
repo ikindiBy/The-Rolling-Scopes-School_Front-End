@@ -1,0 +1,263 @@
+ 
+body {
+    font: 14px 'Verdana';
+    margin: 0;
+    padding: 0;
+    background-color: #35200D ;
+}
+header {
+  width: 1400px;
+  margin: 0 auto;
+  background-color: #35200D;
+  padding-top: 20px;
+}
+
+nav {
+  width: 85%;
+  margin: 0 auto;
+  text-transform: uppercase;
+}
+
+ul {
+    display: block;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    margin-bottom: -3px;
+}
+
+ul:after {
+    display: block;
+    content: ' ';
+    clear: both;
+    float: none;
+}
+
+ul.menu > li {
+    float: left;
+    position: relative;
+    margin-right: 70px;
+}
+
+ul.menu > li:first-child {
+    margin-right: 30px;
+}
+
+ul.menu > li > a {
+  font-size: 1.4em;
+    display: block;
+    padding-top: 16px;
+    color: #438B95;
+    background-color: #081E21;
+    text-decoration: none;
+    text-align: center;
+    height: 60px;
+    width: 160px;
+    border-radius: 20px 20px 0 0;
+    transition: box-shadow .2s;
+    
+}
+
+ul.menu > li > a, ul.submenu > li > a, ul input , button {
+    border-top: 3px solid #268795;
+    border-right: 3px solid #268795;
+    border-left: 3px solid #268795;
+    box-sizing: border-box; 
+}
+
+ul.menu > li > a:hover, button:hover, ul.submenu > li > a {
+  -webkit-box-shadow:inset -14px 9px 30px rgba(67, 139, 149, 0.25), inset 15px 14px 30px rgba(67, 139, 149, 0.25);
+  -moz-box-shadow: inset -14px 9px 30px rgba(67, 139, 149, 0.25), inset 15px 14px 30px rgba(67, 139, 149, 0.25);
+  box-shadow: inset -14px 9px 30px rgba(67, 139, 149, 0.25), inset 15px 14px 30px rgba(67, 139, 149, 0.25);
+}
+
+ul.menu > li:last-child {
+  margin-left: 50px;
+  margin-right: 5px;
+}
+
+ul.submenu {
+    display: none;
+    position: absolute;
+    z-index: 100;
+    width: 160px;
+    top: 60px;
+    left: 0;
+    background-color: transparent;  
+}
+
+ul.submenu > li {
+    display: block; 
+}
+
+ .skirts > li {
+    height: 100px;
+}
+
+ul.submenu > li > a {
+    display: block;
+    height: 100%;
+    padding: 5px;
+    color: #438B95;
+    background-color: #081E21;
+    text-decoration: none;
+    text-align: center;
+    border-top: 1px solid  #081E21;
+    border-bottom: 1px solid  #081E21;
+}
+
+
+ul.submenu li:last-child a {
+  border-bottom: 3px solid #268795;
+  border-radius: 0 0 20px 20px;
+  box-shadow: inset -14px -16px 30px rgba(67, 139, 149, 0.25), inset 15px -14px 30px rgba(67, 139, 149, 0.25);
+}
+
+ul.submenu li:last-child  {
+ background-color: rgba(1,1,1,.1);
+}
+
+ul.submenu > li > a:hover {
+  border-top: 1px solid  #268795;
+  border-bottom: 1px solid  #268795;
+}
+
+ul.submenu li:last-child a:hover {
+  border-top: 1px solid  #268795;
+   border-bottom: 3px solid #268795;
+}
+
+ul.menu > li:hover > ul.submenu {
+    display: block;
+}
+
+ul img {
+  height: 100%;
+}
+
+ul.menu form {
+  width: 160px;
+  height: 60px;
+  margin: 0 90px;
+}
+
+ul input {
+  width: 100%;
+  height: 100%;
+  padding-left: 26px;
+  text-align: left;
+  font-size: 1.9em;
+  background-color: #081E21;
+  color: #438B95;
+  border-bottom: 3px solid #081E21;
+  cursor: default;
+  border-radius: 20px 20px 0 0 ; 
+}
+
+ul input:focus {
+  outline: none;
+} 
+
+button {
+  font-size: 1.4em;
+  width: 160px;
+  height: 60px;
+  color: #438B95;
+  background-color: #081E21;
+  text-align: center;
+  text-transform: uppercase;
+  cursor: pointer;
+  border-bottom: none;
+  border-radius: 20px 20px 0 0;
+  transition: box-shadow .2s;
+  
+}
+
+button:focus {
+  outline: none;
+}
+
+ul.menu li:last-child button {
+ width: 70px;
+}
+
+main {
+  user-select: none;
+  padding: 100px;
+  width: 1400px;
+  margin: 0 auto;
+  height: 900px;
+  box-sizing: border-box;
+  background-image: url(../images/bgc.jpg) ;
+  background-size: 100% 100%;
+  border-top: 3px solid #268795;
+}
+
+.playingArea {
+  position: relative;
+  z-index: 12;
+  width: 1200px;
+  height: 700px;
+  margin: 0 auto;
+  background-image: url(../images/bgc-0.jpg) ;
+  background-size: 100% 100%;
+}
+
+.rules {
+  padding: 100px 150px;
+  font-size: 1.6em;
+  color: #35200D;
+}
+
+
+.card {
+  display: inline-block;
+  width: 130px;
+  height: 182px;
+  box-sizing: border-box;
+  border: 2px solid #35200D;
+  border-radius: 10px;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  transition: background-image 1s;
+}
+
+.card img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  transition: opacity .6s;
+
+}
+
+.card:hover {
+    border: 2px solid #268795;
+}
+
+ .-opened {
+  opacity: 0;
+}
+
+.win, .gameOver {
+  margin: 0;
+  text-align: center;
+  text-transform: uppercase;
+  padding-top: 300px;
+  font-size: 3em;
+}
+
+.gameOver {
+  position: absolute;
+  top:0;
+  padding: 0;
+  opacity: .7;
+  color: #FF7C04;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(67, 139, 149,.8);
+}
+
+.gameOver h2 {
+  padding-top: 250px;
+}
+
