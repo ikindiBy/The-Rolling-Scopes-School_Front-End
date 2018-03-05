@@ -29,5 +29,6 @@ bst.verify();
 2) css-recipes-and-layouts
 
  - Responsive Web Design
- - flex
+ - Flexbox
  - Gulp
+ - SCSS
