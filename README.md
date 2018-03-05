@@ -1,6 +1,6 @@
 # The-Rolling-Scopes-School_Front-End
 
-1) Binary search tree
+1) binary-search-tree
 
 It is an implementation of data structure binary search tree. It is done as a stand-alone, clean, independent component,
 which can be used wherever needed. B.S.T. has the following methods:
